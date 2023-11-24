@@ -5,6 +5,8 @@ print("Hello World")
 name, age = "Fakson", 18
 print(name)
 print(age)
+print(type(age))
+print(type(name))
 
 #Arithematic Operations (+, -, /, *, %)
 x = 12
@@ -147,3 +149,23 @@ def add(num1,num2):
     return num1+num2
 num_sum = add(12,13)
 print(num_sum)
+
+#Built in functions
+#They are ready made functions in python like: abs(absolute), bool(truth seeker), dir, help, eval, exec, float.
+
+#Object-Oriented programming(oop)
+class Person:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+
+    def getName(self):
+        return self.name
+
+    def getAge(self):
+        return self.age
+
+    
+p1 = Person('bob',13)
+print(p1.getName())
+print(p1.getAge())
