@@ -317,3 +317,21 @@ for y in myinter:
 import datetime
 x = datetime.datetime.now()
 print(x)
+
+import json
+sert= ['feed', 'drive', 'run', 'freak']
+x = json.dumps(sert)
+print(x)
+
+# #Input attribute - enables user to input data
+# Name = input('Enter Name:')
+# x = 'Your name is:'
+# print(x + ' ' + Name)
+
+#Strings Formatting
+quantity = 3
+itemno = 567
+price = 49
+fname = 'Gu He'
+myorder = "My name is {3}, I want {0} pieces of item number {1} for {2:.2f} dollars."
+print(myorder.format(quantity, itemno, price, fname))
